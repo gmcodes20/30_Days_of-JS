@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  gap: var(--flex-gap, 2rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--grid-gap, 2rem);
+}
+
+.back {
+  position: fixed;
+  top: 1rem;
+  left: 0.4rem;
+  background-color: #d31111;
+  color: #fff;
+  padding: 0.2em;
+}
+
+.main {
+  padding-inline: 1rem;
+  background-image: url("../kitchen-coverage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.keys {
+  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.key {
+  flex-direction: column;
+  --flex-gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(17, 24, 31, 0.582);
+  color: rgb(179, 196, 29);
+  padding: 0.8em 1.5em;
+  border: 1px solid yellow;
+  transition: 0.1s;
+}
+
+kbd {
+  font-weight: 700;
+  color: #d31111;
+  font-size: 2.8rem;
+}
+
+.playing {
+  border-color: #d31111;
+  transform: scale(1.2);
+  box-sizing: 0 0 10px;
+}
