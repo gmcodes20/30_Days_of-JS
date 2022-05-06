@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color: #c71818;
+  --spacing: 50px;
+  --blur: 3px;
+}
+
+img {
+  width: 100%;
+  padding: var(--spacing);
+  background: var(--color);
+  filter: blur(var(--blur));
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 1rem;
+}
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+label {
+  font-size: 22px;
+  font-weight: 600;
+  color: brown;
+}
+
+.image {
+  width: 70%;
+}
+
+.ascent {
+  color: var(--color);
+}
